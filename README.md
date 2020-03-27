@@ -1,5 +1,6 @@
 # reading-notes-301
 
+[Open the table in a new tab](https://anolla.github.io/reading-notes-301/)
 
 Readings | Links
 -------- | ------
