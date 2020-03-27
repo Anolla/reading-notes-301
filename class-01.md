@@ -10,7 +10,7 @@ Responsive web design is broken down into three main components, including flexi
 
 - target ÷ context = result (relative width of the target element.)
 
--to use media queries, using the @media rule inside of an existing style sheet, importing a new style sheet using the @import rule, or by linking to a separate style sheet from within the HTML document (@media recommended :@media all and (min-width: 320px) and (max-width: 780px) {...})
+- To use media queries, using the @media rule inside of an existing style sheet, importing a new style sheet using the @import rule, or by linking to a separate style sheet from within the HTML document (@media recommended :@media all and (min-width: 320px) and (max-width: 780px) {...})
 
 
 
