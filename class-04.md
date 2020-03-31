@@ -12,8 +12,6 @@ Values:
 
 grid - generates a block-level grid
 inline-grid - generates an inline-level grid
-container {
-  display: grid | inline-grid;
 
 
 
@@ -32,12 +30,6 @@ Values:
 span <number> - the item will span across the provided number of grid tracks
 span <name> - the item will span across until it hits the next line with the provided name
 auto - indicates auto-placement, an automatic span, or a default span of one
-item {
-  grid-column-start: <number> | <name> | span <number> | span <name> | auto;
-  grid-column-end: <number> | <name> | span <number> | span <name> | auto;
-  grid-row-start: <number> | <name> | span <number> | span <name> | auto;
-  grid-row-end: <number> | <name> | span <number> | span <name> | auto;
-
 
 
 ### grid-template-areas
@@ -49,9 +41,7 @@ Values:
 - a period signifies an empty grid cell
 none - no grid areas are defined
 container {
-  grid-template-areas: 
-    "<grid-area-name> | . | none | ..."
-    "...";
+ 
 
 
 ### grid-column-gap
@@ -59,11 +49,6 @@ grid-row-gap
 Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
 
 Values:
-
-<line-size> - a length value
-container {
-  grid-column-gap: <line-size>;
-  grid-row-gap: <line-size>;
 
 
 ### align-items
@@ -80,8 +65,7 @@ container {
 }
 Examples:
 
-.container {
-  align-items: start;
+
 
 
 ### align-content
@@ -96,7 +80,3 @@ stretch - resizes the grid items to allow the grid to fill the full height of th
 space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
 space-between - places an even amount of space between each grid item, with no space at the far ends
 space-evenly - places an even amount of space between each grid item, including the far ends
-container {
-  align-content: start | end | center | stretch | space-around | space-between | space-evenly;	
-
-
