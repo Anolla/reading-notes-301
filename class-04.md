@@ -14,7 +14,7 @@ grid - generates a block-level grid
 inline-grid - generates an inline-level grid
 container {
   display: grid | inline-grid;
-}
+
 
 
 ### Properties for the Children
@@ -37,7 +37,7 @@ item {
   grid-column-end: <number> | <name> | span <number> | span <name> | auto;
   grid-row-start: <number> | <name> | span <number> | span <name> | auto;
   grid-row-end: <number> | <name> | span <number> | span <name> | auto;
-}
+
 
 
 ### grid-template-areas
@@ -52,7 +52,7 @@ container {
   grid-template-areas: 
     "<grid-area-name> | . | none | ..."
     "...";
-}
+
 
 ### grid-column-gap
 grid-row-gap
@@ -64,7 +64,7 @@ Values:
 container {
   grid-column-gap: <line-size>;
   grid-row-gap: <line-size>;
-}
+
 
 ### align-items
 Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
@@ -82,7 +82,7 @@ Examples:
 
 .container {
   align-items: start;
-}
+
 
 ### align-content
 Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
@@ -98,5 +98,5 @@ space-between - places an even amount of space between each grid item, with no s
 space-evenly - places an even amount of space between each grid item, including the far ends
 container {
   align-content: start | end | center | stretch | space-around | space-between | space-evenly;	
-}
+
 
