@@ -12,7 +12,7 @@ Values:
 
 grid - generates a block-level grid
 inline-grid - generates an inline-level grid
-.container {
+container {
   display: grid | inline-grid;
 }
 
@@ -32,7 +32,7 @@ Values:
 span <number> - the item will span across the provided number of grid tracks
 span <name> - the item will span across until it hits the next line with the provided name
 auto - indicates auto-placement, an automatic span, or a default span of one
-.item {
+item {
   grid-column-start: <number> | <name> | span <number> | span <name> | auto;
   grid-column-end: <number> | <name> | span <number> | span <name> | auto;
   grid-row-start: <number> | <name> | span <number> | span <name> | auto;
@@ -46,9 +46,9 @@ Defines a grid template by referencing the names of the grid areas which are spe
 Values:
 
 <grid-area-name> - the name of a grid area specified with grid-area
-. - a period signifies an empty grid cell
+- a period signifies an empty grid cell
 none - no grid areas are defined
-.container {
+container {
   grid-template-areas: 
     "<grid-area-name> | . | none | ..."
     "...";
@@ -61,7 +61,7 @@ Specifies the size of the grid lines. You can think of it like setting the width
 Values:
 
 <line-size> - a length value
-.container {
+container {
   grid-column-gap: <line-size>;
   grid-row-gap: <line-size>;
 }
@@ -75,7 +75,7 @@ start - aligns items to be flush with the start edge of their cell
 end - aligns items to be flush with the end edge of their cell
 center - aligns items in the center of their cell
 stretch - fills the whole height of the cell (this is the default)
-.container {
+container {
   align-items: start | end | center | stretch;
 }
 Examples:
@@ -96,7 +96,7 @@ stretch - resizes the grid items to allow the grid to fill the full height of th
 space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
 space-between - places an even amount of space between each grid item, with no space at the far ends
 space-evenly - places an even amount of space between each grid item, including the far ends
-.container {
+container {
   align-content: start | end | center | stretch | space-around | space-between | space-evenly;	
 }
 
