@@ -26,29 +26,26 @@ Determines a  grid item's location within the grid by referring to specific grid
 
 * Values:
 
-<line> - can be a number to refer to a numbered grid line, or a name to refer to a named grid line
-span <number> - the item will span across the provided number of grid tracks
-span <name> - the item will span across until it hits the next line with the provided name
-auto - indicates auto-placement, an automatic span, or a default span of one
+line can be a number to refer to a numbered grid line, or a name to refer to a named grid line
+span the item will span across the provided number of grid tracks
+span the item will span across until it hits the next line with the provided name
+auto indicates auto-placement, an automatic span, or a default span of one
 
 
 ## grid-template-areas
 - Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
 
 * Values:
-
-<grid-area-name> - the name of a grid area specified with grid-area
-- a period signifies an empty grid cell
+ - the name of a grid area specified with grid-area
+a period signifies an empty grid cell
 none - no grid areas are defined
-container {
- 
+
 
 
 ## grid-column-gap
 grid-row-gap
 Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
 
-Values:
 
 
 ## align-items
@@ -60,9 +57,6 @@ start - aligns items to be flush with the start edge of their cell
 end - aligns items to be flush with the end edge of their cell
 center - aligns items in the center of their cell
 stretch - fills the whole height of the cell (this is the default)
-container {
-  align-items: start | end | center | stretch;
-}
 
 
 
